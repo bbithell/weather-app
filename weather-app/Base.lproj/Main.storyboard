@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Arial Rounded Bold.ttf">
+            <string>ArialRoundedMTBold</string>
+            <string>ArialRoundedMTBold</string>
+            <string>ArialRoundedMTBold</string>
+            <string>ArialRoundedMTBold</string>
+            <string>ArialRoundedMTBold</string>
+            <string>ArialRoundedMTBold</string>
+            <string>ArialRoundedMTBold</string>
+            <string>ArialRoundedMTBold</string>
+            <string>ArialRoundedMTBold</string>
+            <string>ArialRoundedMTBold</string>
+            <string>ArialRoundedMTBold</string>
+            <string>ArialRoundedMTBold</string>
+            <string>ArialRoundedMTBold</string>
+            <string>ArialRoundedMTBold</string>
+            <string>ArialRoundedMTBold</string>
+            <string>ArialRoundedMTBold</string>
+            <string>ArialRoundedMTBold</string>
+            <string>ArialRoundedMTBold</string>
+            <string>ArialRoundedMTBold</string>
+            <string>ArialRoundedMTBold</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="weather_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Bwl-8X-Mw4">
+                                <rect key="frame" x="200" y="95" width="200" height="340"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current City" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="xCd-lo-Rhg">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="28"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="28" id="4bq-RN-cu9"/>
+                                            <constraint firstAttribute="width" constant="200" id="7Fi-Dm-3NX"/>
+                                            <constraint firstAttribute="width" constant="199" id="Whd-DC-eqZ"/>
+                                            <constraint firstAttribute="height" constant="28" id="Yfo-yG-zWX"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="25"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="4bq-RN-cu9"/>
+                                                <exclude reference="Whd-DC-eqZ"/>
+                                            </mask>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1lI-kQ-qTf">
+                                        <rect key="frame" x="0.0" y="43" width="200" height="28"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="28" id="6up-ee-SSe"/>
+                                            <constraint firstAttribute="width" constant="200" id="LS3-ca-IcA"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="XfG-5x-bi3">
+                                        <rect key="frame" x="0.0" y="86" width="200" height="124"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="BqH-Op-5mh">
+                                                <rect key="frame" x="0.0" y="0.0" width="200" height="124"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="IXx-yt-xG2">
+                                                        <rect key="frame" x="0.0" y="0.0" width="200" height="89"/>
+                                                        <subviews>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MNC-XA-0EI">
+                                                                <rect key="frame" x="0.0" y="0.0" width="98" height="89"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="100" id="QNC-Nd-Zw6"/>
+                                                                    <constraint firstAttribute="width" constant="100" id="cX1-1U-DLj"/>
+                                                                </constraints>
+                                                                <variation key="default">
+                                                                    <mask key="constraints">
+                                                                        <exclude reference="QNC-Nd-Zw6"/>
+                                                                        <exclude reference="cX1-1U-DLj"/>
+                                                                    </mask>
+                                                                </variation>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kDI-Qs-qvM">
+                                                                <rect key="frame" x="103" y="0.0" width="98" height="89"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="58" id="BQb-jF-4yE"/>
+                                                                    <constraint firstAttribute="width" constant="100" id="pRU-Se-MNE"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="50"/>
+                                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <variation key="default">
+                                                                    <mask key="constraints">
+                                                                        <exclude reference="BQb-jF-4yE"/>
+                                                                        <exclude reference="pRU-Se-MNE"/>
+                                                                    </mask>
+                                                                </variation>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="100" id="SEW-y7-eXW"/>
+                                                            <constraint firstAttribute="width" constant="200" id="jxi-gj-Bub"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vd9-j9-Vdz">
+                                                        <rect key="frame" x="0.0" y="99" width="200" height="25"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="25" id="FeG-vR-xGu"/>
+                                                            <constraint firstAttribute="width" constant="100" id="T1x-Ru-pNG"/>
+                                                            <constraint firstAttribute="height" constant="28" id="c7L-pB-NvR"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="22"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <variation key="default">
+                                                            <mask key="constraints">
+                                                                <exclude reference="T1x-Ru-pNG"/>
+                                                                <exclude reference="c7L-pB-NvR"/>
+                                                            </mask>
+                                                        </variation>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="qDM-8Q-JwS"/>
+                                            <constraint firstAttribute="height" constant="124" id="sfh-fK-YVv"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Hoi-nC-qTO">
+                                        <rect key="frame" x="0.0" y="225" width="200" height="50"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="low_100" translatesAutoresizingMaskIntoConstraints="NO" id="Ywn-oN-dq4">
+                                                <rect key="frame" x="0.0" y="0.0" width="54" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="12i-kF-W87"/>
+                                                    <constraint firstAttribute="width" constant="50" id="iJa-dK-eWz"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="high_100" translatesAutoresizingMaskIntoConstraints="NO" id="Yja-XQ-513">
+                                                <rect key="frame" x="74" y="0.0" width="53" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="98" id="Ohh-VD-mKV"/>
+                                                    <constraint firstAttribute="height" constant="50" id="dlL-gI-RCu"/>
+                                                    <constraint firstAttribute="width" constant="50" id="eXa-RC-KBg"/>
+                                                    <constraint firstAttribute="width" constant="98" id="lAP-EX-WQX"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="Ohh-VD-mKV"/>
+                                                        <exclude reference="lAP-EX-WQX"/>
+                                                    </mask>
+                                                </variation>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="windy_100" translatesAutoresizingMaskIntoConstraints="NO" id="duF-tR-dXM">
+                                                <rect key="frame" x="147" y="0.0" width="54" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="3za-r5-sgM"/>
+                                                    <constraint firstAttribute="height" constant="50" id="YmW-40-EhP"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Odh-cK-h1m">
+                                        <rect key="frame" x="0.0" y="290" width="200" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tempLow" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0cG-0L-kuP">
+                                                <rect key="frame" x="0.0" y="0.0" width="54" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="XUu-GR-VYt"/>
+                                                    <constraint firstAttribute="width" constant="54" id="zRD-sl-G9O"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="25"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tempHigh" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JnV-FR-PeM">
+                                                <rect key="frame" x="74" y="0.0" width="53" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="Csg-lH-0ty"/>
+                                                    <constraint firstAttribute="width" constant="54" id="nAl-Jh-2HI"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="25"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Ydz-im-cAZ">
+                                                <rect key="frame" x="147" y="0.0" width="54" height="50"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="wind" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nTE-3h-QMA">
+                                                        <rect key="frame" x="0.0" y="0.0" width="54" height="25"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="25" id="Ve5-dz-B4s"/>
+                                                            <constraint firstAttribute="height" constant="25" id="jKp-pL-EfB"/>
+                                                            <constraint firstAttribute="width" constant="54" id="kT5-t6-5ue"/>
+                                                            <constraint firstAttribute="width" constant="50" id="zzR-ff-pGf"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="12"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <variation key="default">
+                                                            <mask key="constraints">
+                                                                <exclude reference="jKp-pL-EfB"/>
+                                                                <exclude reference="zzR-ff-pGf"/>
+                                                            </mask>
+                                                        </variation>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="wind" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZIz-9Z-MvJ">
+                                                        <rect key="frame" x="0.0" y="25" width="54" height="25"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="54" id="5U5-Zn-DUi"/>
+                                                            <constraint firstAttribute="width" constant="50" id="DJB-Vp-Ip9"/>
+                                                            <constraint firstAttribute="height" constant="25" id="GkB-QN-0Lw"/>
+                                                            <constraint firstAttribute="height" constant="25" id="mzi-kb-3BX"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="12"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <variation key="default">
+                                                            <mask key="constraints">
+                                                                <exclude reference="mzi-kb-3BX"/>
+                                                                <exclude reference="DJB-Vp-Ip9"/>
+                                                            </mask>
+                                                        </variation>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Your Current Weather For" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qgp-rl-VAl">
+                                <rect key="frame" x="72" y="20" width="458" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="XHE-p7-p55"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="CAG-ga-FMo">
+                                <rect key="frame" x="145" y="480" width="330" height="100"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="D7A-qk-M3E">
+                                        <rect key="frame" x="0.0" y="0.0" width="330" height="25"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dta-Ev-uNt">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="25"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="TPs-1l-MTE"/>
+                                                    <constraint firstAttribute="height" constant="25" id="ZS9-zO-BTg"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="10"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Onv-hg-1Gh">
+                                                <rect key="frame" x="70" y="0.0" width="50" height="25"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="25" id="VLF-3g-oVT"/>
+                                                    <constraint firstAttribute="width" constant="50" id="dfb-sA-2dB"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="10"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VQm-DD-DJZ">
+                                                <rect key="frame" x="140" y="0.0" width="50" height="25"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="8hP-3d-FbZ"/>
+                                                    <constraint firstAttribute="height" constant="25" id="CaQ-Rd-qyc"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="10"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vic-oZ-ITR">
+                                                <rect key="frame" x="210" y="0.0" width="50" height="25"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="25" id="WHk-Af-Swf"/>
+                                                    <constraint firstAttribute="width" constant="50" id="eU8-dH-tSC"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="10"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZvX-ld-Vjs">
+                                                <rect key="frame" x="280" y="0.0" width="50" height="25"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="25" id="bat-mQ-rsw"/>
+                                                    <constraint firstAttribute="width" constant="50" id="tpN-WK-qmW"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="10"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="eQC-SN-R6X">
+                                        <rect key="frame" x="0.0" y="25" width="330" height="50"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5Jg-wI-3Pm">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="gzj-SG-BIz"/>
+                                                    <constraint firstAttribute="width" constant="50" id="mpo-bS-PjK"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LZN-8q-AoA">
+                                                <rect key="frame" x="70" y="0.0" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="ALi-Cw-q6G"/>
+                                                    <constraint firstAttribute="width" constant="50" id="YCW-e1-hQb"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cAr-zJ-UQv">
+                                                <rect key="frame" x="140" y="0.0" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="YDP-PE-Atq"/>
+                                                    <constraint firstAttribute="width" constant="50" id="edV-LV-IfK"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9Jz-jk-xB8">
+                                                <rect key="frame" x="210" y="0.0" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="YDp-bJ-3TK"/>
+                                                    <constraint firstAttribute="height" constant="50" id="r6P-C4-Q0j"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wxK-TA-4y2">
+                                                <rect key="frame" x="280" y="0.0" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="Age-HO-7jj"/>
+                                                    <constraint firstAttribute="height" constant="50" id="Tw8-2I-I0j"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="5v5-oV-4TU">
+                                        <rect key="frame" x="0.0" y="75" width="330" height="25"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0te-RB-cR8">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="25"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="25" id="6Cu-hb-PGD"/>
+                                                    <constraint firstAttribute="width" constant="50" id="Pnb-ZP-TeI"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="12"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CXO-mF-StN">
+                                                <rect key="frame" x="70" y="0.0" width="50" height="25"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="Joe-S9-2Z1"/>
+                                                    <constraint firstAttribute="height" constant="25" id="NMF-NU-1hY"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="12"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KnY-Oc-0hH">
+                                                <rect key="frame" x="140" y="0.0" width="50" height="25"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="25" id="4Rd-8I-5Bu"/>
+                                                    <constraint firstAttribute="width" constant="50" id="RQl-U5-8Xe"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="12"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2lx-rA-8mL">
+                                                <rect key="frame" x="210" y="0.0" width="50" height="25"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="S8j-Hp-yH4"/>
+                                                    <constraint firstAttribute="height" constant="25" id="Xvc-2x-Ly8"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="12"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nlD-3K-JzJ">
+                                                <rect key="frame" x="280" y="0.0" width="50" height="25"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="es0-FT-QoN"/>
+                                                    <constraint firstAttribute="height" constant="25" id="fQH-Lz-DsG"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="12"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Eef-xp-TKh"/>
+                                    <constraint firstAttribute="width" constant="450" id="MPW-1d-LVM"/>
+                                    <constraint firstAttribute="height" constant="100" id="w0K-dt-SCD"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Eef-xp-TKh"/>
+                                        <exclude reference="MPW-1d-LVM"/>
+                                    </mask>
+                                </variation>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="VMC004-69" translatesAutoresizingMaskIntoConstraints="NO" id="eHB-9M-H71">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" red="0.18321314102564101" green="0.18321314102564101" blue="0.18321314102564101" alpha="0.20188577586206896" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="5 Day Forecast" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QbW-0B-san">
+                                <rect key="frame" x="145" y="451" width="330" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="330" id="8Rt-Nr-i98"/>
+                                    <constraint firstAttribute="height" constant="21" id="C9K-GT-6zV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CAG-ga-FMo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2On-D7-sC1"/>
+                            <constraint firstItem="eHB-9M-H71" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="Eno-qG-nR8"/>
+                            <constraint firstItem="eHB-9M-H71" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="MJ2-ZK-fap"/>
+                            <constraint firstItem="CAG-ga-FMo" firstAttribute="top" secondItem="QbW-0B-san" secondAttribute="bottom" constant="8" id="YIH-CI-27Q"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="CAG-ga-FMo" secondAttribute="bottom" constant="20" id="b5p-6O-dQ1"/>
+                            <constraint firstItem="CAG-ga-FMo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bHl-qH-Ey1"/>
+                            <constraint firstAttribute="trailing" secondItem="eHB-9M-H71" secondAttribute="trailing" id="dCn-oY-99S"/>
+                            <constraint firstItem="Bwl-8X-Mw4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dHS-ro-Nx9"/>
+                            <constraint firstItem="Bwl-8X-Mw4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="75" id="dXR-Yy-fBf"/>
+                            <constraint firstItem="CAG-ga-FMo" firstAttribute="top" secondItem="Bwl-8X-Mw4" secondAttribute="bottom" constant="25" id="epd-g0-qyW"/>
+                            <constraint firstItem="Qgp-rl-VAl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="fwY-8l-rPf"/>
+                            <constraint firstItem="QbW-0B-san" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hEn-DP-8RL"/>
+                            <constraint firstItem="Qgp-rl-VAl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jOf-bQ-NAF"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="eHB-9M-H71" secondAttribute="bottom" id="tRm-GJ-TBm"/>
+                            <constraint firstItem="CAG-ga-FMo" firstAttribute="top" secondItem="Bwl-8X-Mw4" secondAttribute="bottom" constant="75" id="wVk-xW-4f0"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="2On-D7-sC1"/>
+                                <exclude reference="epd-g0-qyW"/>
+                                <exclude reference="wVk-xW-4f0"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="conditionDesc" destination="vd9-j9-Vdz" id="h0j-HX-fYO"/>
+                        <outlet property="currentTime" destination="1lI-kQ-qTf" id="f6o-l6-k1M"/>
+                        <outlet property="dayFiveImage" destination="wxK-TA-4y2" id="bap-gz-vCT"/>
+                        <outlet property="dayFiveName" destination="ZvX-ld-Vjs" id="MiV-jF-x0i"/>
+                        <outlet property="dayFiveTemp" destination="nlD-3K-JzJ" id="gnp-rK-Q6H"/>
+                        <outlet property="dayFourImage" destination="9Jz-jk-xB8" id="sbg-QD-mvF"/>
+                        <outlet property="dayFourName" destination="vic-oZ-ITR" id="zpu-uf-k3L"/>
+                        <outlet property="dayFourTemp" destination="2lx-rA-8mL" id="J3R-l0-ouq"/>
+                        <outlet property="dayOneImage" destination="5Jg-wI-3Pm" id="t52-MK-luK"/>
+                        <outlet property="dayOneName" destination="dta-Ev-uNt" id="cMs-ZU-Kef"/>
+                        <outlet property="dayOneTemp" destination="0te-RB-cR8" id="Gki-uR-b82"/>
+                        <outlet property="dayThreeImag" destination="cAr-zJ-UQv" id="m9Q-bK-gLx"/>
+                        <outlet property="dayThreeName" destination="VQm-DD-DJZ" id="PMZ-ou-aWi"/>
+                        <outlet property="dayThreeTemp" destination="KnY-Oc-0hH" id="K67-bt-5JG"/>
+                        <outlet property="dayTwoImage" destination="LZN-8q-AoA" id="Wle-3Q-FgT"/>
+                        <outlet property="dayTwoName" destination="Onv-hg-1Gh" id="deL-fz-PWl"/>
+                        <outlet property="dayTwoTemp" destination="CXO-mF-StN" id="F1c-9o-4iu"/>
+                        <outlet property="locationName" destination="xCd-lo-Rhg" id="WZn-EU-Jhi"/>
+                        <outlet property="temp" destination="kDI-Qs-qvM" id="aLk-Gf-2ce"/>
+                        <outlet property="tempHigh" destination="JnV-FR-PeM" id="fBu-xV-shy"/>
+                        <outlet property="tempLow" destination="0cG-0L-kuP" id="0Ez-RQ-eMu"/>
+                        <outlet property="weatherIcon" destination="MNC-XA-0EI" id="Vgz-Iy-tmN"/>
+                        <outlet property="windDirection" destination="ZIz-9Z-MvJ" id="0eU-lZ-FQi"/>
+                        <outlet property="windSpeed" destination="nTE-3h-QMA" id="lU2-dn-rMj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="295" y="31"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="VMC004-69" width="519" height="800"/>
+        <image name="high_100" width="100" height="100"/>
+        <image name="low_100" width="100" height="100"/>
+        <image name="windy_100" width="100" height="100"/>
+    </resources>
+</document>
